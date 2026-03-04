@@ -1,0 +1,24 @@
+<Window x:Class="BoticaPOS.UI.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BoticaPOS" Height="540" Width="920">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Left" Width="180" Background="#FFEDEDED">
+            <TextBlock Text="Navegación" FontWeight="Bold" Margin="8"/>
+            <Button Content="Medicamentos" Margin="8"/>
+            <Button Content="Inventario" Margin="8"/>
+            <Button Content="Compras" Margin="8"/>
+            <Button Content="Ventas POS" Margin="8"/>
+            <Button Content="Comprobantes" Margin="8"/>
+            <Button Content="Caja" Margin="8"/>
+            <Button Content="Reportes" Margin="8"/>
+            <Button Content="Configuración" Margin="8"/>
+        </StackPanel>
+        <Grid>
+            <TextBlock Text="BoticaPOS listo" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="22"/>
+        </Grid>
+        <StatusBar DockPanel.Dock="Bottom">
+            <TextBlock Text="{Binding Status}"/>
+        </StatusBar>
+    </DockPanel>
+</Window>
